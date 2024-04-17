@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+.header {
+    text-align: center;
+    background-color: #007bff;
+    padding: 80px 0;
+    color: #fff;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #fff;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.header-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.header-links {
+    display: flex;
+    justify-content: center;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #0056b3;
+    border: 2px solid #0056b3;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.header-link:hover {
+    background-color: #004081;
+    border-color: #004081;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+.section-title {
+    font-size: 24px;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.section-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.info-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-table td:first-child {
+    font-weight: bold;
+}
+
+.form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Himanshu Nayyar - Personal Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <img class="profile-image" src="himanshu.jpg" alt="Profile Image">
+            <div class="header-text">
+                <h1 class="header-title">Himanshu Nayyar</h1>
+                <p class="header-subtitle">An Aspiring Software Developer</p>
+                <div class="header-links">
+                    <a href="HIMANSHU NAYYAR RESUME.docx" download="HIMANSHU_NAYYAR_RESUME.docx" class="header-link"><i class="fas fa-download"></i> Resume</a>
+                    <a href="#contact" class="header-link"><i class="fas fa-envelope"></i> Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section about_me">
+        <div class="content card">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-text">
+                I am Himanshu Nayyar, a passionate software developer studying at Seneca College, specializing in Computer Programming.
+                I am driven by a love for tech innovation, focusing on cloud computing, Java, and Python. With proficiency in English, Punjabi, and Hindi,
+                I aim to build software solutions with a global impact.
+            </p>
+        </div>
+
+        <div class="content card">
+            <h2 class="section-title">Basic Information</h2>
+            <table class="info-table">
+                <tr>
+                    <td>Age:</td>
+                    <td>24</td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td>Himanshu Nayyar</td>
+                </tr>
+                <tr>
+                    <td>Course:</td>
+                    <td>Computer Programming</td>
+                </tr>
+                <tr>
+                    <td>Section:</td>
+                    <td>WEB222-NEE</td>
+                </tr>
+                <tr>
+                    <td>Professor:</td>
+                    <td>Mark Meritt</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content card">
+            <h2 class="section-title">Honesty Statement</h2>
+            <p class="section-text">
+                I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy.
+                No part of this assessment has been copied manually or electronically from any other source
+                (including web sites) except for the information supplied by the WEB222 instructors and / or
+                made available in this assessment for my use. I also declare that no part of this assignment has
+                been distributed to other students.
+            </p>
+        </div>
+    </section>
+
+    <section class="section education">
+        <div class="content card">
+            <h2 class="section-title">Education</h2>
+            <div class="education-info">
+                <div class="info-item">
+                    <h3 class="info-title">Seneca Polytechnic</h3>
+                    <p class="info-text">Diploma: Computer Programming</p>
+                    <p class="info-text">Graduation Year: 2025</p>
+                    <p class="info-text">Location: Toronto, Ontario, Canada</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-form">
+        <div class="content card">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contactForm" action="https://httpbin.org/post" method="POST" class="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" list="cities" required>
+                <datalist id="cities">
+                    <option value="Toronto">
+                    <option value="Brampton">
+                    <option value="Montreal">
+                    <option value="Vancouver">
+                    <option value="Mississauga">
+                    <option value="Burlington">
+                    <option value="Hamilton">
+                    <option value="St.Catherine">
+                    <option value="Newmarket">
+                    <option value="Niagara Falls">
+                </datalist>
+
+                <label for="postalCode">Postal Code:</label>
+                <input type="text" id="postalCode" name="postalCode" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d" placeholder="e.g., A1A 1A1" required>
+
+                <label>Reason for Contact:</label>
+                <input type="radio" name="reason" value="Question" checked> Question
+                <input type="radio" name="reason" value="Comment"> Comment
+                <input type="radio" id="hiringOption" name="reason" value="Hiring"> Hiring
+
+                <div class="hourly-rate hidden">
+                    <label for="hourlyRate">Hourly Rate:</label>
+                    <input type="text" id="hourlyRate" name="hourlyRate" pattern="\d+(\.\d{1,2})?" placeholder="Enter hourly rate" required>
+                </div>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-text">&copy; 2024. Himanshu Nayyar.  All rights reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
